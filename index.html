@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGrL9oqcFCJnEKKHfZL_OFUnnptxmvPfzOjg&s" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <nav class="nav-bar">
+      <h1><a href="#container">Welcome to Tic Tac Toe</a></h1>
+      <ul>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="container" id="container">
+
+      <div class="ready">
+        <h2 id="readytxt">Are you ready to play?</h2>
+        <button id="yes-btn">Yes</button>
+      </div>
+
+      <!-- <div class="chooseplayer">
+            <h4>Choose your player</h4>
+            <button id="x-btn">X</button>
+            <button id="y-btn">O</button>
+          </div> -->
+
+      <div class="gameboard">
+
+        <table class="table-cells">
+
+          <tr>
+            <td class="tds"></td>
+            <td class="tds"></td>
+            <td class="tds"></td>
+          </tr>
+
+          <tr>
+            <td class="tds"></td>
+            <td class="tds"></td>
+            <td class="tds"></td>
+          </tr>
+
+          <tr>
+            <td class="tds"></td>
+            <td class="tds"></td>
+            <td class="tds"></td>
+          </tr>
+
+        </table>
+
+        <div class="showresult">
+          <p id="turn">You're always first turn</p>
+          <p id="result">Status: Playing</p>
+          <button id="restart">Restart</button>
+        </div>
+
+        <h2 class="congrats" id="congrats">Congratulations</h2>
+
+      </div>
+    </div>
+
+    <div class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <form action="" class="form-group">
+        <label for="fullname">Name</label>
+        <br>
+        <input type="text" name="fullname" class="form-control" required autocomplete="off">
+        <br><br>
+        <label for="email">Eamil</label>
+        <br>
+        <input type="email" name="email" class="form-control" required>
+        <br><br>
+        <label for="suggest">Message</label>
+        <br>
+        <textarea name="suggest" class="form-control" id="suggest" placeholder="Text your suggestion..."
+          required></textarea>
+        <br><br>
+        <button type="submit" class="submit">Submit</button>
+      </form>
+    </div>
+
+
+    <div class="copyright">
+      <p class="copyrighttext">&copy;<span id="autoyear"></span> Chloe. All Rights Reserved.</p>
+    </div>
+    <script src="app.js"></script>
+
+  </body>
+
+</html>
